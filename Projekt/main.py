@@ -254,7 +254,7 @@ class ProcessingData:
         return data.head(h), data.tail(n - h)
 
 
-def menu():
+def start():
     # combobox
     Widgets.combobox()
 
@@ -299,6 +299,6 @@ if __name__ == '__main__':
     errorsF = Predictor.error_calc(regsFemale, validF)
     errorsM = Predictor.error_calc(regsMale, validM)
 
-    # przejscie do menu
-    menu()
+    # odpalenie programu do menu
+    start()
     root.mainloop()
